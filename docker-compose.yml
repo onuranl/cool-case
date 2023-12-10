@@ -1,0 +1,9 @@
+services:
+  web:
+    build: news
+    ports:
+      - '3200:3200'
+  server:
+    build: news-server
+    ports:
+      - '8000:8000'
